@@ -29,5 +29,9 @@ class GamesController < ApplicationController
   def include_letters?(input)
     raise
     input.upcase.split('').all? { |letter| @letters.include?(letter) }
+    # CREATE AN HASH FROM INPUT (ARRAY) key = letter, value = number of letter
+    # ruby array, compare count of letters
+    @letters.count
   end
+
 end
